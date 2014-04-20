@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<title>
+				{% block title %}David Ingledow{% endblock %}
+			</title>
+
+			<script type="text/javascript" src="//use.typekit.net/ilo0oai.js"></script>
+			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+			{% block css %}
+				<link
+					rel="stylesheet"
+					type="text/css"
+					href="{{STATIC_URL}}css/global.css">
+				<link
+					rel="stylesheet"
+					type="text/css"
+					href="{{STATIC_URL}}css/avenir.css">
+			{% endblock %}
+			{% block extra_css %}
+			{% endblock %}
+
+		{% endblock %}
+	</head>
+
+	<body id="{% block body_id %}{% endblock %}"
+		  class="{% block body_class %}{% endblock %}">
+
+    {% block body %}
+
+		{% block nav %}
+			<div class="nav">
+			    <ul>
+			        <li><a href="/">ABOUT</a></li>
+			        <li><a href="/blog/">BLOG</a></li>
+			        <li><a href="/work/">WORK</a></li>
+			        <li><a href="/contact/">CONTACT</a></li>
+			    </ul>
+			</div>
+		{% endblock %}
+
+			{% block container %}
+			<div class="post_header">
+			</div>
+			<div class="content">
+				{% block content %}
+				{% endblock %}
+			</div>
+			{% endblock %}
+
+		{% block footer %}
+		<footer>
+			<p>David Ingledow &copy; 2014</p>
+		    <a class="icon-twitter" href="https://twitter.com/dingledow">
+		    </a>
+		    <a href="https://plus.google.com/108117619306984245111?rel=author"></a>
+		</footer>
+		{% endblock footer %}
+
+	{% endblock %}
+	</body>
+</html>
