@@ -24,7 +24,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'gunicorn',
     'south',
-    'blog',
     'markdown_deux',
     'storages',
 )
