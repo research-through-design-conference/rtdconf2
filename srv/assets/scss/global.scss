@@ -7,6 +7,9 @@
 }
 
 $rtd_k90: #3c3c3c;
+$rtd_2015_red: #ea5b60;
+$rtd_2015_light_red: #fdeeec;
+$rtd_2015_blue: #2f5ba7;
 
 html{
     height: 100%;
@@ -29,8 +32,13 @@ h1{
 }
 
 h2{
-    font-size: 2.2em;
-    margin: 0 0 0.68em 0;
+    font-size: 2.6em;
+    margin: 2em 0 0.68em 0;
+}
+
+h3{
+    font-size: 1.6em;
+    margin: 0 0 0.5em 0;
 }
 
 p, ul, ol, li{
@@ -114,6 +122,8 @@ body#rtd2015.home{
             margin-right: auto;
             div.inner-container{
                 max-width: 540px;
+                display: inline-block;
+                vertical-align: top;
             }
         }
     }
@@ -122,6 +132,39 @@ body#rtd2015.home{
     }
     section.content:last-child{
         margin: 4em 0 4em;
+    }
+    div.important-dates{
+        background-color: $rtd_2015_light_red;
+        border: 1px solid $rtd_2015_red;
+        border-radius: 6px;
+        padding: 20px;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        margin-top: 100px;
+        h4{
+            font-family: "ff-tisa-web-pro",serif;
+            font-weight: 700;
+            color: $rtd_2015_red;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-top: 0;
+        }
+        h3{
+            font-family: "brandon-grotesque", sans-serif;
+            font-weight: 700;
+            color: $rtd_2015_red;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+            color: $rtd_2015_red;
+        }
     }
 }
 
