@@ -1,0 +1,185 @@
+@mixin vertical-align-middle{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+$rtd_k90: #3c3c3c;
+$rtd_2015_red: #ea5b60;
+$rtd_2015_light_red: #fdeeec;
+$rtd_2015_blue: #2f5ba7;
+
+html{
+    height: 100%;
+    max-height: 100%;
+}
+
+body{
+    margin: 0;
+    color: $rtd_k90;
+}
+
+h1, h2, h3{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 100;
+}
+
+h1{
+    font-size: 3.2em;
+    margin: 0 0 0.5em 0;
+}
+
+h2{
+    font-size: 2.6em;
+    margin: 2em 0 0.68em 0;
+}
+
+h3{
+    font-size: 1.6em;
+    margin: 0 0 0.5em 0;
+}
+
+p, ul, ol, li{
+    font-family:"fira-sans", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    line-height: 1.8em;
+}
+
+body#rtd2015{
+    section.header{
+        height: 500px;
+        background-position: center center;
+        background-size: cover;
+        nav{
+            max-width: 980px;
+            margin: 0 auto;
+            ul{
+                margin: 0;
+                list-style: none;
+                padding: 20px 0 20px 0;
+                li{
+                    display: inline;
+                    font-family: "brandon-grotesque", sans-serif;
+                    font-weight: 700;
+                    font-size: 0.6em;
+                    color: white;
+                    text-transform: uppercase;
+                    margin-left: 24px;
+                    letter-spacing: 1px;
+                    text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+                }
+                li:first-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+body#rtd2015.home{
+    section.header{
+        position: relative;
+        div.container{
+            position: relative;
+            width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            margin-top: -58px;
+        }
+        div.content{
+            @include vertical-align-middle;
+            width: 100%;
+            position: absolute;
+            h1{
+                font-family: "brandon-grotesque", sans-serif;
+                font-weight: 900;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+                font-size: 3.6em;
+                max-width: 640px;
+                //@include vertical-align-middle;
+            }
+            h2{
+                font-family:"fira-sans", Helvetica, Arial, sans-serif;
+                font-size: 2.2em;
+                font-weight: 100;
+                text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+                color: white;
+                //@include vertical-align-middle;
+            }
+        }
+    }
+    section.content{
+        width: 100%;
+        div.container{
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            div.inner-container{
+                max-width: 540px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+    section.content{
+        margin: 4em 0 2em;
+    }
+    section.content:last-child{
+        margin: 4em 0 4em;
+    }
+    div.important-dates{
+        background-color: $rtd_2015_light_red;
+        border: 1px solid $rtd_2015_red;
+        border-radius: 6px;
+        padding: 20px;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        margin-top: 100px;
+        h4{
+            font-family: "ff-tisa-web-pro",serif;
+            font-weight: 700;
+            color: $rtd_2015_red;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-top: 0;
+        }
+        h3{
+            font-family: "brandon-grotesque", sans-serif;
+            font-weight: 700;
+            color: $rtd_2015_red;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+            color: $rtd_2015_red;
+        }
+    }
+}
+
+footer{
+    padding:10px 10px 10px 20px;
+    border-top:1px solid #eaeaea;
+}
+
+footer p{
+    font-family:"fira-sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin:0;
+    color:#a8a8a8;
+    display:inline-block;
+    vertical-align:middle;
+    width:calc(100% - 30px);
+    font-weight:100;
+}

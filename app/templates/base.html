@@ -8,11 +8,16 @@
 				{% block title %}Research Through Design{% endblock %}
 			</title>
 
+			{% block typekit %}
+			<script type="text/javascript" src="//use.typekit.net/gfs0krz.js"></script>
+			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+			{% endblock %}
+
 			{% block css %}
 				<link
 					rel="stylesheet"
 					type="text/css"
-					href="{{STATIC_URL}}css/global.css">
+					href="{{STATIC_URL}}min/css/global.css">
 			{% endblock %}
 			{% block extra_css %}
 			{% endblock %}
@@ -22,10 +27,26 @@
 
 	<body id="{% block body_id %}{% endblock %}"
 		  class="{% block body_class %}{% endblock %}">
-
     {% block body %}
 
-		{% block nav %}
+		{% block header %}
+		<section class="header">
+			{% block nav %}
+				<nav>
+					<ul>
+						<li>Welcome</li>
+						<li>Call for Submissions</li>
+						<li>Exhibitions</li>
+						<li>Pictorials</li>
+						<li>Venue</li>
+						<li>Organisers</li>
+					</ul>
+				</nav>
+			{% endblock %}
+		</section>
+		{% endblock %}
+
+		{% block content %}
 		{% endblock %}
 
 		{% block footer %}
