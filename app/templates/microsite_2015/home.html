@@ -2,6 +2,9 @@
 
 {% block extra_css %}
     <style>
+    section.header{
+        background-image: url("{{STATIC_URL}}img/home-bg.jpg");
+    }
     </style>
 {% endblock %}
 
@@ -10,6 +13,10 @@
 
 {% block header %}
     <section class="header">
+        <div class="title-container">
+            <img src="{{STATIC_URL}}img/title.svg">
+            <img class="important-dates" src="{{STATIC_URL}}img/dates.svg">
+        </div>
     </section>
 {% endblock %}
 

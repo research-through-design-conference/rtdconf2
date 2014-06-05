@@ -58,7 +58,7 @@ body#rtd2015{
 		height: 120px;
 		background-color: $rtd_k90;
 		div.logo{
-			margin-top: 5px;
+			margin-top:12px;
 			display: inline-block;
 			vertical-align: middle;
 			a{
@@ -71,7 +71,7 @@ body#rtd2015{
 		nav{
 			display: inline-block;
 			vertical-align: middle;
-			position: fixed;
+			position: absolute;
 			height: 120px;
 			ul{
 				margin: 0;
@@ -103,6 +103,31 @@ body#rtd2015{
 }
 
 body#rtd2015.home{
+	section.header{
+		height: 540px;
+		background-size: cover;
+		border-top: 5px solid #2e5ba5;
+		div.title-container{
+			margin: 0 auto;
+			max-width: 800px;
+			height: 100%;
+			img{
+				max-width: 420px;
+				position: relative;
+				top: 40%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				display: inline-block;
+				vertical-align: middle;
+			}
+			img.important-dates{
+				width: 240px;
+				height: auto;
+				float: right;
+			}
+		}
+	}
 }
 
 footer{
