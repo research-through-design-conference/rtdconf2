@@ -2,12 +2,9 @@
 
 {% block extra_css %}
     <style>
-        section.header{
-            background-image:
-                radial-gradient(transparent, rgba(0,0,0,.3)),
-			    -webkit-linear-gradient(top, rgba(0,0,0,0) 200px, rgba(0,0,0,0.4) 500px),
-                url('{{STATIC_URL}}img/home/home-header.jpg');
-        }
+    section.header{
+        background-image: url("{{STATIC_URL}}img/home-bg.jpg");
+    }
     </style>
 {% endblock %}
 
@@ -15,98 +12,15 @@
 {% block body_class %}home{% endblock %}
 
 {% block header %}
-<section class="header">
-    {% block nav %}
-        <nav>
-            <ul>
-                <li>Welcome</li>
-                <li>Call for Submissions</li>
-                <li>Exhibitions</li>
-                <li>Pictorials</li>
-                <li>Venue</li>
-                <li>Organisers</li>
-            </ul>
-        </nav>
-    {% endblock %}
-    <div class="container">
-        <div class="content">
-            <h1>
-                Research Through Design 2015
-            </h1>
-            <h2>
-                21st Century Makers and Materialities
-            </h2>
+    <section class="header">
+        <div class="title-container">
+            <img src="{{STATIC_URL}}img/title.svg">
+            <img class="important-dates" src="{{STATIC_URL}}img/dates.svg">
         </div>
-    </div>
-</section>
+    </section>
 {% endblock %}
 
 {% block content %}
     <section class="content">
-        <div class="container">
-            <div class="inner-container">
-            <h1>
-                Call for Submissions
-            </h1>
-            <p>
-                We are excited to invite submissions for the second bi-annual Research Through Design (RTD) conference, to be held in Cambridge, UK, between the 25th and 27th of March 2015.
-            </p>
-            <p>
-                Research through Design (RTD) supports the dissemination of practice-based research through a novel and experimental conference format, comprising a curated exhibition of design research accompanied by round-table discussions in ‘Rooms of Interest’. The exhibition will be used as a platform for presenting and demonstrating research processes and outputs, and for generating debate about the role of the design practitioner and their work in a research context. Building on the success of inaugural RTD conference held in Newcastle upon Tyne in 2013, the second conference, RTD 2015, is to be hosted at Microsoft Research’s new European lab in the centre of Cambridge, which promises to be an exciting venue for exploring what design practice means in the early-21st Century.
-            </p>
-            <p>
-                RTD 2015 aims to foreground the materiality of design research, placing its artefacts, processes, and practices centre stage. We invite submissions from researcher-practitioners documenting research through design projects, including descriptions of methods, processes and insights emerging from a design inquiry and offering a departure point for rich discussion. Criteria for selection are based on the authors’ presentation of artefacts (constituting research process or outcomes) as central to their submission; the artefacts will be included in the curated exhibition, and papers should accompany the exhibited artefact in a presentation of ‘research through design’ at the conference.
-            </p>
-            <p>
-                Contributions to RTD 2015 may fall under (but are not limited to) the following themes:
-            </p>
-            <ul>
-                <li><b>Ways of Making</b>: Experiences, explorations, procedures and aesthetics;</li>
-                <li><b>Ways of Knowing</b>: Methodologies of practice, intentionality and critical thinking;</li>
-                <li><b>Ways of Being</b>: Craft practitioners; researcher identity; engagement and collaboration;</li>
-                <li><b>Process Interrupted</b>: Work in progress; critical reflective practice.</li>
-            </ul>
-            <p>
-                We strongly encourage participation from a wide range of Design disciplines including but not limited to: Product, Industrial, Interaction, Service, Textile, Craft, Jewellery, Fashion, Architecture, Interior, Experience, Film, and those working at the intersection of disciplines such as Human-Computer Interaction or in more emergent fields and practices such as Synthetic Biology.
-            </p>
-            <h2>
-                How to Submit to RTD 2015
-            </h2>
-            <p>
-                The submission process is made through the OpenConf system (check back soon for link to submission site) and is split into two stages:
-            </p>
-            <p>
-                <b>Stage 1</b>: Authors are invited to submit a 300 word Abstract, accompanied by up to 10 illustrations provided  as a single PDF file by the 4th July 2014. The Abstract should summarise the motivations, intentions and/or outcomes of a ‘research through design’ project, and describe an artefact or documentation representative of this project, intended for inclusion in a curated exhibition at the conference. We invite the submission of diverse material forms of artefact, including film, online media, installation, or live performance. However the artefact – or a component feature of it – must be portable to be flexibly moved between the exhibition space and Rooms of Interest during the conference programme. Abstracts should summarise key aspects of a research through design project, and will be double-peer reviewed by the programme committee.
-            </p>
-            <p>
-                <b>Stage 2</b>: Authors of successful Abstract submissions will be invited to submit a 6-page (maximum) written commentary on their work, using the RTD paper template provided, by 3rd October 2014. Papers should comprehensively document a research through design project, describing aims, process, (intended) outcomes and critical reflections. Authors are encouraged to illustrate this paper, leveraging visual communication in the presentation of their work.
-            </p>
-            <p>
-                There are no constraints on the size and dimensions of proposed artefacts for submission. However, authors are encouraged to consider transportation logistics and costs, alongside artefact portability at the conference. Venue staff will receive the artefacts from 27th February 2015. If your artefact contains latex or any other known allergen, let us know when submitting and we will negotiate how best to display it if accepted. Authors will be responsible for all shipping costs and insurance of artefacts and for their removal at the end of the conference.
-            </p>
-            <p>
-                Papers and images of the artefacts will be published in ISBN digital conference proceedings that will be made available at the conference and on the conference website after the event. Works of exceptional quality will be invited to be part of an edited book that will be published following the conference.
-            </p>
-        </div>
-        {% block important_dates %}
-        <div class="important-dates">
-            <h4>Important Dates</h4>
-            <h3>4 July 2014</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>1 September 2014</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>3 October 2014</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>12 December 2014</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>9 January 2015</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>27 February 2015</h3>
-            <p>Abstract Submission Deadline</p>
-            <h3>25–37 March 2015</h3>
-            <p>Abstract Submission Deadline</p>
-        </div>
-        {% endblock %}
-        </div>
     </section>
 {% endblock %}
