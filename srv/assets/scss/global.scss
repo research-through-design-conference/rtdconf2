@@ -23,7 +23,7 @@ body{
 
 h1, h2, h3{
     font-family: "brandon-grotesque", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -103,34 +103,6 @@ body#rtd2015{
 			}
 		}
 	}
-}
-
-body#rtd2015.home{
-	section.header{
-		height: 540px;
-		background-size: cover;
-		border-top: 5px solid #2e5ba5;
-		div.title-container{
-			margin: 0 auto;
-			max-width: 800px;
-			height: 100%;
-			img{
-				max-width: 420px;
-				position: relative;
-				top: 40%;
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				transform: translateY(-50%);
-				display: inline-block;
-				vertical-align: middle;
-			}
-			img.important-dates{
-				width: 240px;
-				height: auto;
-				float: right;
-			}
-		}
-	}
 	section.content-container{
 		width: 980px;
 		margin: -54px auto 54px;
@@ -168,6 +140,34 @@ body#rtd2015.home{
 			}
 			div.twitter{
 				margin-bottom: 3em;
+			}
+		}
+	}
+}
+
+body#rtd2015.home{
+	section.header{
+		height: 540px;
+		background-size: cover;
+		border-top: 5px solid #2e5ba5;
+		div.title-container{
+			margin: 0 auto;
+			max-width: 800px;
+			height: 100%;
+			img{
+				max-width: 420px;
+				position: relative;
+				top: 40%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				display: inline-block;
+				vertical-align: middle;
+			}
+			img.important-dates{
+				width: 240px;
+				height: auto;
+				float: right;
 			}
 		}
 	}

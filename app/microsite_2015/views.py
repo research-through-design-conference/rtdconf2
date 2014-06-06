@@ -4,3 +4,15 @@ from django.shortcuts import render
 def home(request):
         # now return the rendered template
         return render(request, 'microsite_2015/home.html')
+
+def about(request):
+        # now return the rendered template
+        return render(request, 'microsite_2015/about.html')
+
+def attending(request):
+        # now return the rendered template
+        return render(request, 'microsite_2015/attending.html')
+
+def organisers(request):
+        # now return the rendered template
+        return render(request, 'microsite_2015/organisers.html')
