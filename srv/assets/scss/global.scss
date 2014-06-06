@@ -59,6 +59,7 @@ body#rtd2015{
 	section.nav{
 		height: 120px;
 		background-color: $rtd_k90;
+		border-bottom: 5px solid #2e5ba5;
 		div.logo{
 			margin-top:12px;
 			display: inline-block;
@@ -106,6 +107,7 @@ body#rtd2015{
 	section.content-container{
 		width: 980px;
 		margin: -54px auto 54px;
+		min-height: 1600px;
 		img{
 			width: 100%;
 			height: auto;
@@ -149,7 +151,6 @@ body#rtd2015.home{
 	section.header{
 		height: 540px;
 		background-size: cover;
-		border-top: 5px solid #2e5ba5;
 		div.title-container{
 			margin: 0 auto;
 			max-width: 800px;
@@ -168,6 +169,41 @@ body#rtd2015.home{
 				width: 240px;
 				height: auto;
 				float: right;
+			}
+		}
+	}
+}
+
+body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
+	section.header{
+		height: 540px;
+		background-size: cover;
+		margin: 0;
+		div.title-container{
+			max-width: 980px;
+			margin: 0 auto;
+			height: 100%;
+			h1{
+				margin: 0;
+				position: relative;
+				top: 27%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				color: white;
+				text-shadow: 1px 1px 0 #000;
+				font-size: 3.5em;
+			}
+		}
+	}
+	section.content-container{
+		margin: 0 auto;
+		div.content{
+			padding: 1em 2em;
+			background-color: white;
+			margin-top: -8em;
+			h2:first-child{
+				margin-top: 0.5em;
 			}
 		}
 	}
