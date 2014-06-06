@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <style>
+    section.header{
+        background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.2))), url("{{STATIC_URL}}img/home/home-header1.jpg");
+    }
+    </style>
+{% endblock %}
+
+{% block body_id %}rtd2015{% endblock %}
+{% block body_class %}about{% endblock %}
+
+{% block header %}
+    <section class="header">
+        <div class="title-container">
+            <h1>WHAT IS THE RESEARCH THROUGH DESIGN CONFERENCE?</h1>
+        </div>
+    </section>
+{% endblock %}
+
+{% block content %}
+    <section class="content-container">
+        <div class="content">
+            <p>The <a href="http://www.praxisandpoetics.org/researchthroughdesign/proceedings/">inaugural Research Through Design (RTD) conference</a> took place in September 2013 at the Baltic Centre for Contemporary Art in Gateshead, envisioned by founders Jayne Wallace and Joyce Yee as a new, experimental platform for disseminating practice-based design research. It responded to the observation that most conference opportunities are analogous with those of non-design centric disciplines, with the likelihood that key features and dynamics of design researchers’ work were being missed by these formats. Therefore, the first RTD conference resisted the temptation to adopt a traditional format for both paper submission and presentation in favour of an exhibition of design research artefacts accompanied by round table discussions in ‘Rooms of Interest’.</p>
+    <img src="{{STATIC_URL}}img/IMG_2187.jpg">
+    <p>Throughout the submission process and during the conference itself, practice was foregrounded and the artefact was placed centre stage. It was considered that having the artefact present in the exhibition, presentations and discussions would enable a more intimate connection to the topic and research. It was also recognised that some work might still be in progress and therefore the submission process was intentionally open to work in this state. The artefacts accepted for the conference might be considered the outcome or the process but also as intellectual tools – things to think through – acting as hypotheses or provocations. Based on this idea, the first RTD conference welcomed work where the object was the conduit to intellectual discussions whether philosophical or practical. As such, through all of this the exhibition and artefacts were central to the conference and used as a platform to present or express outcomes of research, to demonstrate examples of research explorations, and to generate debate about the role of making in design research.</p>
+    <img src="{{STATIC_URL}}img/IMG_1933.jpg">
+    <p>For the first RTD conference, the chairs endeavoured to create a space that not only felt supportive to ‘research through design’, but also to reflective, inclusive discussions about the work. As a result, RTD was further envisioned to provide a platform for early career researchers with a practitioner background and to be an approachable forum for those design practitioners who may be relatively new to research.</p>
+    <img src="{{STATIC_URL}}img/IMG_2538.jpg">
+    <p>With the second international biennial Research Through Design conference, we continue to embrace this ethos for establishing the novel, synergistic format of RTD that supports the dissemination of practice based research. We hope you will be able to join us in the conversation at RTD 2015 in Cambridge, UK!</p>
+        </div>
+        <div class="sidebar">
+            <h3>RTD on Twitter</h3>
+            <div class="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23rtd2015" data-widget-id="474794103033450496">Tweets about "#rtd2015"</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+            <h3>Our Sponsors</h3>
+            <img src="{{STATIC_URL}}img/MSRC.png">
+            <img src="{{STATIC_URL}}img/Necastle-Uni.png">
+            <img src="{{STATIC_URL}}img/Leverhulme-Trust.png">
+            <img src="{{STATIC_URL}}img/EPSRC-logo.png">
+            <img src="{{STATIC_URL}}img/DC-logo-sponsor.png">
+        </div>
+    </section>
+{% endblock %}
