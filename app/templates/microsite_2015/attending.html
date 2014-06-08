@@ -29,15 +29,13 @@
             <h2>About Cambridge</h2>
             <p>The city of Cambridge is one of the world’s most famous University cities, and is at the heart of the UK’s high-technology community by being the home of the ‘Silicon Fen’. As well as the University of Cambridge and it’s historic buildings, the city has a choice of galleries showcasing a diverse range of, from the contemporary to the classic, a buzzing theatre and performance scene presents drama, dance and family shows. You can go punting on the River Cam, enjoy a picnic in the park, join a walking tour of the city or explore further afield from the seat of a bicycle following the excellent network of cycle paths in and around the city.</p>
             <h2>Getting to the Venue</h2>
+            <div id="map-canvas" style="height: 400px;"></div>
             <h3>By Car</h3>
             <p>The M11 connects the London Orbital Motorway (M25) to Cambridge. Take Exit 11 and follow the A1309 towards Cambridge. Join the A1134 for approximately 1.5 miles and turn right onto Brooklands Avenue, then left onto Hills Road. Turn right onto Station Road. The Microsoft Research Building is situated on the left at the corner of Station Road and Tenison Road.</p>
-
             <h3>By Train</h3>
             <p>The Microsoft Research building is on the corner of Station Road and Tenison Road, less than 5 minutes walk from Cambridge railway station. Cambridge has regular service to London, Birmingham and Stanstead Airport. For train times and fares, visit the National Rail Enquiries Web site.</p>
-
             <h3>By Coach</h3>
             <p>Most coaches arrive at Parkside Coach Station, which is a 15 minute walk from Microsoft Research’s building. For coach times and fares, visit the National Express Web site.</p>
-
             <h3>By Plane</h3>
             <p>At less than 3 miles from central Cambridge, Cambridge International Airport is very convenient for international air travel to and from the East of England region. Cambridge is also within easy reach of London Stanstead, London Heathrow, London Gatwick & Birmingham International Airport – with easy access by train, coach, or car.</p>
         </div>
@@ -46,7 +44,7 @@
             <div class="twitter">
                 <a class="twitter-timeline" href="https://twitter.com/search?q=%23rtd2015" data-widget-id="474794103033450496">Tweets about "#rtd2015"</a>
                 <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                 </script>
             </div>
             <h3>Our Sponsors</h3>
@@ -57,4 +55,9 @@
             <img src="{{STATIC_URL}}img/DC-logo-sponsor.png">
         </div>
     </section>
+    <script type="text/javascript">
+	   var url = "{{STATIC_URL}}";
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfag1bKziE3JGdNVKBHBV1st9-YBEVBFc&sensor=false"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/global.js"></script>
 {% endblock %}
