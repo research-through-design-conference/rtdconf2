@@ -13,6 +13,6 @@ def attending(request):
         # now return the rendered template
         return render(request, 'microsite_2015/attending.html')
 
-def organisation(request):
+def organisers(request):
         # now return the rendered template
-        return render(request, 'microsite_2015/organisation.html')
+        return render(request, 'microsite_2015/organisers.html')

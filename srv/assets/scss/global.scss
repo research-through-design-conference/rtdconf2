@@ -67,14 +67,46 @@ body#rtd2015{
 		height: 120px;
 		background-color: $rtd_k90;
 		border-bottom: 5px solid #2e5ba5;
+		@media screen and (max-width: 540px){
+			height: 90px;
+		}
+		div.container{
+			@media screen and (max-width: 980px){
+				text-align: center;
+			}
+		}
 		div.logo{
 			margin-top:12px;
 			display: inline-block;
 			vertical-align: middle;
+			@media screen and (max-width: 980px){
+				max-width: 540px;
+				margin: 0 auto;
+				display: block;
+			}
+			@media screen and (max-width: 540px){
+				padding: 10px 0 0 0;
+			}
 			a{
 				img{
 					display: inline-block;
 					vertical-align: middle;
+				}
+				img.logotype{
+					width: 330px;
+					height: 85px;
+					@media screen and (max-width: 540px){
+						width: 240px;
+						height: auto;
+					}
+				}
+				img.icon{
+					width: 80px;
+					height: 99px;
+					@media screen and (max-width: 540px){
+						width: 60px;
+						height: auto;
+					}
 				}
 			}
 			div.tagline{
@@ -83,6 +115,15 @@ body#rtd2015{
 				background-color: #2e5ba5;
 				padding: 1px 12px 3px;
 				max-width: 980px;
+				@media screen and (max-width: 980px){
+					width: 100%;
+					left: 0;
+					top: 100px;
+					box-sizing: border-box;
+				}
+				@media screen and (max-width: 540px){
+					top: 90px;
+				}
 				p{
 					color: white;
 					margin: 0;
@@ -93,8 +134,17 @@ body#rtd2015{
 					font-size: 16px;
 					text-shadow: 1px 1px 0 #142d4d;
 					margin-top: -4px;
+					@media screen and (max-width: 540px){
+						font-size: 0.8em;
+					}
+					@media screen and (max-width: 400px){
+						font-size: 0.6em;
+					}
 					sup{
 						font-size: 7px;
+					}
+					@media screen and (max-width: 980px){
+						margin-top: 0;
 					}
 				}
 			}
@@ -105,6 +155,22 @@ body#rtd2015{
 			position: absolute;
 			height: 120px;
 			right: 0;
+			@media screen and (max-width: 980px){
+				display: block;
+				left: 0;
+				height: auto;
+				width: 100%;
+				margin-top: 36px;
+				background-color: rgba(0,0,0,0.5);
+				z-index: 10;
+				padding: 6px 0;
+			}
+			@media screen and (max-width: 540px){
+				margin-top: 38px;
+			}
+			@media screen and (max-width: 400px){
+				margin-top: 32px;
+			}
 			ul{
 				margin: 0;
 				list-style: none;
@@ -114,6 +180,18 @@ body#rtd2015{
 				-ms-transform: translateY(-50%);
 				transform: translateY(-50%);
 				text-align: right;
+				@media screen and (max-width: 980px){
+					display: block;
+					left: 0;
+					height: auto;
+					width: 100%;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					padding: 0;
+					text-align: center;
+				}
 				li{
 					display: inline;
 					text-transform: uppercase;
@@ -121,12 +199,29 @@ body#rtd2015{
 					font-weight: 900;
 					letter-spacing: 1px;
 					margin-left: 36px;
+					@media screen and (max-width: 540px){
+						font-size: 0.8em;
+						margin-left: 24px;
+					}
+					@media screen and (max-width: 400px){
+						font-size: 13px;
+						margin-left: 10px;
+					}
+					@media screen and (max-width: 350px){
+						font-size: 11px;
+						margin-left: 10px;
+					}
 					a{
 						color: white;
 						text-decoration: none;
 					}
 					a:hover{
 						color: #ececec;
+					}
+				}
+				li:first-child{
+					@media screen and (max-width: 980px){
+						margin-left: 0;
 					}
 				}
 			}
@@ -177,14 +272,21 @@ body#rtd2015{
 
 body#rtd2015.home{
 	section.header{
-		height: 680px;
+		height: 540px;
 		background-size: cover;
+		@media screen and (max-width: 980px){
+			height: auto;
+			padding-bottom: 40px;
+		}
 		div.title-container{
 			margin: 0 auto;
-			max-width: 840px;
+			max-width: 980px;
 			height: 100%;
+			@media screen and (max-width: 980px){
+				height: auto;
+			}
 			div.home-title{
-				max-width: 420px;
+				max-width: 500px;
 				position: relative;
 				top: 47%;
 				-webkit-transform: translateY(-50%);
@@ -192,14 +294,27 @@ body#rtd2015.home{
 				transform: translateY(-50%);
 				display: inline-block;
 				vertical-align: middle;
+				@media screen and (max-width: 980px){
+					display: block;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					margin: 0 auto;
+					max-width: 390px;
+					margin-bottom: 60px;
+					padding: 80px 20px 0 20px;
+					box-sizing: border-box;
+				}
 				img{
 					width: 100%;
+					max-width: 400px;
 				}
 				h3{
 					color: white;
 					font-weight: 900;
 					letter-spacing: 1px;
-					font-size: 2em;
+					font-size: 1.5em;
 					line-height: 1.2em;
 					text-transform: uppercase;
 					margin-left: 10px;
@@ -208,9 +323,11 @@ body#rtd2015.home{
 				}
 			}
 			div.important-dates{
-				width: 280px;
+				max-width: 390px;
 				height: auto;
 				float: right;
+				text-align: right;
+				margin-right: 8px;
 				border-image-slice: 35 35 35 35;
 				border-image-width: 18px 18px 18px 18px;
 				border-image-outset: 12px;
@@ -225,11 +342,27 @@ body#rtd2015.home{
 				-webkit-transform: translateY(-50%);
 				-ms-transform: translateY(-50%);
 				transform: translateY(-50%);
+				@media screen and (max-width: 980px){
+					display: block;
+					float: none;
+					margin: 0 auto;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					text-align: left;
+					width: 80%;
+				}
+				@media screen and (max-width: 400px){
+					span{
+						display: block;
+					}
+				}
 				h3{
 					margin-top: 0;
 				}
 				p{
-					font-size: 0.9em;
+					font-size: 1em;
 				}
 				p:last-child{
 					margin-bottom: 0;
@@ -237,17 +370,72 @@ body#rtd2015.home{
 			}
 		}
 	}
+	section.content-container{
+		@media screen and (max-width: 980px){
+			overflow: auto;
+			width: 100%;
+			margin: 0 auto;
+			overflow-x: hidden;
+		}
+		img.home-content-header{
+			@media screen and (max-width: 980px){
+				height: 240px;
+				width: auto;
+			}
+		}
+		div.content{
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				padding: 1em;
+			}
+		}
+		div.sidebar{
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				float: none;
+				border: none;
+				width: 100%;
+				max-width: 540px;
+				padding: 1em;
+				box-sizing: border-box;
+				img{
+					width: 30%;
+					display: inline-block;
+					vertical-align: middle;
+					margin: 24px 18px;
+				}
+			}
+		}
+	}
 }
 
-body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisation{
+body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
 	section.header{
 		height: 540px;
 		background-size: cover;
 		margin: 0;
+		@media screen and (max-width: 980px){
+			width: 100%;
+			height: 200px;
+			margin-top: 10px;
+		}
+		@media screen and (max-width: 540px){
+			margin-top: 24px;
+		}
+		@media screen and (max-width: 400px){
+			margin-top: 18px;
+		}
 		div.title-container{
 			max-width: 980px;
 			margin: 0 auto;
 			height: 100%;
+			@media screen and (max-width: 980px){
+				max-width: 540px;
+				padding: 16px 32px;
+				position: relative;
+			}
 			h1{
 				margin: 0;
 				position: relative;
@@ -258,17 +446,55 @@ body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisation{
 				color: white;
 				text-shadow: 1px 1px 0 #000;
 				font-size: 2.8em;
+				@media screen and (max-width: 980px){
+					font-size: 2em;
+					top: 50%;
+				}
+				@media screen and (max-width: 480px){
+					font-size: 1.4em;
+				}
+				@media screen and (max-width: 360px){
+					font-size: 1.1em;
+				}
 			}
 		}
 	}
 	section.content-container{
 		margin: 0 auto;
+		@media screen and (max-width: 980px){
+			overflow: auto;
+			width: 100%;
+			margin: 0 auto;
+		}
 		div.content{
 			padding: 1em 2em;
 			background-color: white;
 			margin-top: -8em;
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				padding: 1em;
+			}
 			h2:first-child{
 				margin-top: 0.5em;
+			}
+		}
+		div.sidebar{
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				float: none;
+				border: none;
+				width: 100%;
+				max-width: 540px;
+				padding: 1em;
+				box-sizing: border-box;
+				img{
+					width: 30%;
+					display: inline-block;
+					vertical-align: middle;
+					margin: 24px 18px;
+				}
 			}
 		}
 	}
