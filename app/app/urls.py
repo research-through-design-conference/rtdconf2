@@ -12,5 +12,5 @@ urlpatterns = patterns('',
     url(r'^$', include('microsite_2015.urls')),
     url(r'^about/', 'microsite_2015.views.about'),
     url(r'^attending/', 'microsite_2015.views.attending'),
-    url(r'^organisation/', 'microsite_2015.views.organisation'),
+    url(r'^organisers/', 'microsite_2015.views.organisers'),
 )

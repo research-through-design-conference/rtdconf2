@@ -177,14 +177,14 @@ body#rtd2015{
 
 body#rtd2015.home{
 	section.header{
-		height: 680px;
+		height: 540px;
 		background-size: cover;
 		div.title-container{
 			margin: 0 auto;
-			max-width: 840px;
+			max-width: 980px;
 			height: 100%;
 			div.home-title{
-				max-width: 420px;
+				max-width: 500px;
 				position: relative;
 				top: 47%;
 				-webkit-transform: translateY(-50%);
@@ -194,12 +194,13 @@ body#rtd2015.home{
 				vertical-align: middle;
 				img{
 					width: 100%;
+					max-width: 400px;
 				}
 				h3{
 					color: white;
 					font-weight: 900;
 					letter-spacing: 1px;
-					font-size: 2em;
+					font-size: 1.5em;
 					line-height: 1.2em;
 					text-transform: uppercase;
 					margin-left: 10px;
@@ -208,9 +209,11 @@ body#rtd2015.home{
 				}
 			}
 			div.important-dates{
-				width: 280px;
+				width: 390px;
 				height: auto;
 				float: right;
+				text-align: right;
+				margin-right: 8px;
 				border-image-slice: 35 35 35 35;
 				border-image-width: 18px 18px 18px 18px;
 				border-image-outset: 12px;
@@ -229,7 +232,7 @@ body#rtd2015.home{
 					margin-top: 0;
 				}
 				p{
-					font-size: 0.9em;
+					font-size: 1em;
 				}
 				p:last-child{
 					margin-bottom: 0;
@@ -239,7 +242,7 @@ body#rtd2015.home{
 	}
 }
 
-body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisation{
+body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
 	section.header{
 		height: 540px;
 		background-size: cover;
