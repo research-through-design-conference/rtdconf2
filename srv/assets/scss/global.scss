@@ -204,8 +204,12 @@ body#rtd2015{
 						margin-left: 24px;
 					}
 					@media screen and (max-width: 400px){
-						font-size: 0.6em;
-						margin-left: 18px;
+						font-size: 13px;
+						margin-left: 10px;
+					}
+					@media screen and (max-width: 350px){
+						font-size: 11px;
+						margin-left: 10px;
 					}
 					a{
 						color: white;
@@ -270,10 +274,17 @@ body#rtd2015.home{
 	section.header{
 		height: 540px;
 		background-size: cover;
+		@media screen and (max-width: 980px){
+			height: auto;
+			padding-bottom: 40px;
+		}
 		div.title-container{
 			margin: 0 auto;
 			max-width: 980px;
 			height: 100%;
+			@media screen and (max-width: 980px){
+				height: auto;
+			}
 			div.home-title{
 				max-width: 500px;
 				position: relative;
@@ -283,6 +294,18 @@ body#rtd2015.home{
 				transform: translateY(-50%);
 				display: inline-block;
 				vertical-align: middle;
+				@media screen and (max-width: 980px){
+					display: block;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					margin: 0 auto;
+					max-width: 390px;
+					margin-bottom: 60px;
+					padding: 80px 20px 0 20px;
+					box-sizing: border-box;
+				}
 				img{
 					width: 100%;
 					max-width: 400px;
@@ -300,7 +323,7 @@ body#rtd2015.home{
 				}
 			}
 			div.important-dates{
-				width: 390px;
+				max-width: 390px;
 				height: auto;
 				float: right;
 				text-align: right;
@@ -319,6 +342,22 @@ body#rtd2015.home{
 				-webkit-transform: translateY(-50%);
 				-ms-transform: translateY(-50%);
 				transform: translateY(-50%);
+				@media screen and (max-width: 980px){
+					display: block;
+					float: none;
+					margin: 0 auto;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+					text-align: left;
+					width: 80%;
+				}
+				@media screen and (max-width: 400px){
+					span{
+						display: block;
+					}
+				}
 				h3{
 					margin-top: 0;
 				}
@@ -327,6 +366,45 @@ body#rtd2015.home{
 				}
 				p:last-child{
 					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	section.content-container{
+		@media screen and (max-width: 980px){
+			overflow: auto;
+			width: 100%;
+			margin: 0 auto;
+			overflow-x: hidden;
+		}
+		img.home-content-header{
+			@media screen and (max-width: 980px){
+				height: 240px;
+				width: auto;
+			}
+		}
+		div.content{
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				padding: 1em;
+			}
+		}
+		div.sidebar{
+			@media screen and (max-width: 980px){
+				display: block;
+				margin: 0 auto;
+				float: none;
+				border: none;
+				width: 100%;
+				max-width: 540px;
+				padding: 1em;
+				box-sizing: border-box;
+				img{
+					width: 30%;
+					display: inline-block;
+					vertical-align: middle;
+					margin: 24px 18px;
 				}
 			}
 		}
