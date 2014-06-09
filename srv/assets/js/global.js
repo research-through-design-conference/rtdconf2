@@ -8,14 +8,6 @@ function initialize() {
 
     var featureOpts = [
         {
-            featureType: "transit.line",
-            stylers: [
-                { saturation: 100 },
-                { gamma: 0.99 },
-                { hue: "#ff3300" },
-                { visibility: "on" }
-            ]
-        }, {
             featureType: "landscape.man_made",
             elementType: "geometry",
             stylers: [
@@ -30,12 +22,6 @@ function initialize() {
             featureType: "poi.attraction",
             stylers: [
                 { visibility: "simplified" }
-            ]
-        }, {
-            stylers: [
-                { gamma: 2.58 },
-                { saturation: 58 },
-                { hue: "#c93225" }
             ]
         }, {
             featureType: "road",
