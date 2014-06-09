@@ -478,6 +478,10 @@ body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
 			h2:first-child{
 				margin-top: 0.5em;
 			}
+			iframe{
+				max-width: 540px;
+				width: 100%;
+			}
 		}
 		div.sidebar{
 			@media screen and (max-width: 980px){
