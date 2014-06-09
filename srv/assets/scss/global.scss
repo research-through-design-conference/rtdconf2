@@ -311,7 +311,7 @@ body#rtd2015.home{
 					max-width: 400px;
 				}
 				h3{
-					color: white;
+					color: #e5e5e5;
 					font-weight: 900;
 					letter-spacing: 1px;
 					font-size: 1.5em;
@@ -320,6 +320,9 @@ body#rtd2015.home{
 					margin-left: 10px;
 					text-shadow: 2px 2px 0 #1b3f6d;
 					-webkit-text-stroke: 0px rgba(black, 0.9);
+					sup{
+						font-size: 12px;
+					}
 				}
 			}
 			div.important-dates{
