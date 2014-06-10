@@ -14,5 +14,5 @@ STATICFILES_DIRS = (
 STATIC_ROOT = 'http://rtd-production.s3.amazonaws.com/static/'
 STATIC_URL = 'http://rtd-production.s3.amazonaws.com/static/'
 
-MEDIA_ROOT = 'http://rtd-staging.s3.amazonaws.com/media/'
-MEDIA_URL = 'http://rtd-staging.s3.amazonaws.com/media/'
+MEDIA_ROOT = 'http://rtd-production.s3.amazonaws.com/media/'
+MEDIA_URL = 'http://rtd-production.s3.amazonaws.com/media/'
