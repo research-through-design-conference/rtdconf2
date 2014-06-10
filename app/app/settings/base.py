@@ -26,6 +26,8 @@ INSTALLED_APPS = (
     'south',
     'markdown_deux',
     'storages',
+    'microsite_2015',
+    'django_summernote',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -36,6 +38,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+DOMAIN_NAME = ''
 
 ROOT_URLCONF = 'app.urls'
 
