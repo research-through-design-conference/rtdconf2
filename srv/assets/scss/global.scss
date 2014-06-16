@@ -414,11 +414,18 @@ body#rtd2015.home{
 	}
 }
 
+@-moz-document url-prefix() {
+  body#rtd2015.about > section.header {
+    background-image: url("http://rtd-production.s3.amazonaws.com/IMG_2223.jpg");
+  }
+}
+
 body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
 	section.header{
 		height: 540px;
 		background-size: cover;
 		margin: 0;
+		background-color: rgb(193,77,55);
 		@media screen and (max-width: 980px){
 			width: 100%;
 			height: 200px;
