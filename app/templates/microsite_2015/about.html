@@ -3,7 +3,10 @@
 {% block extra_css %}
     <style>
     section.header{
-        background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.2))), url("{{STATIC_URL}}img/home/home-header1.jpg");
+        background-position: center bottom;
+        background-image: url("{{STATIC_URL}}img/IMG_1913.jpg");
+        background-image: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url("{{STATIC_URL}}img/IMG_1913.jpg");
+        background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.2))), url("{{STATIC_URL}}img/IMG_1913.jpg");
     }
     </style>
 {% endblock %}

@@ -414,12 +414,6 @@ body#rtd2015.home{
 	}
 }
 
-@-moz-document url-prefix() {
-  body#rtd2015.about > section.header {
-    background-image: url("http://rtd-production.s3.amazonaws.com/IMG_2223.jpg");
-  }
-}
-
 body#rtd2015.about, body#rtd2015.attending, body#rtd2015.organisers{
 	section.header{
 		height: 540px;
